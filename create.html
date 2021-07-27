@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create level</title>
+    <link rel="stylesheet" href="./css/style.css?ver=0.0.2">
+    <link rel="stylesheet" href="./css/popup.css?ver=0.0.2">
+    <style>
+        input {
+            padding: 5px;
+        }
+        textarea{
+            padding: 5px;
+            font-family: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color the boxes</h1>
+    <div class="message"></div>
+    <div class="container" id="container">
+        <a href="/">Go to Home</a>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Level type</td>
+                    <td><input type="text" id="levelType" value="keyboard"></td>
+                </tr>
+                <tr>
+                    <td>Level pattern</td>
+                    <td><input type="text" id="levelPattern" value="normal"></td>
+                </tr>
+                <tr>
+                    <td>Level colors</td>
+                    <td><input type="text" id="levelColors" value="bac,ec1,fda,c00"></td>
+                </tr>
+                <tr>
+                    <td>Level boxes</td>
+                    <td><input type="text" id="levelBoxes" value="5x5"></td>
+                </tr>
+                <tr>
+                    <td>Box colors</td>
+                    <td> <textarea name="" id="boxColors" cols="30"
+                            rows="10">1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,2,2,2,2,2,4,4,4,4,4</textarea>
+                        <br>
+                    <div class="boxColorsCounter"></div></td>
+                </tr>
+                <tr>
+                    <td><button id="resetButton" type="reset" class="button danger">Reset</button></td>
+                    <td><button id="createButton" type="button" class="button info">Create</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/index.js?ver=0.0.2"></script>
+    <script src="./js/createlevel.js?ver=0.0.2"></script>
+</body>
+
+</html>
