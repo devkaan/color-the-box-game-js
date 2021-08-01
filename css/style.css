@@ -39,6 +39,7 @@ body {
     margin-top: 10px;
 }
 .levelCompleted .box{
+border:0px;
     cursor: not-allowed !important;
 }
 
